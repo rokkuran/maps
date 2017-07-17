@@ -1,17 +1,11 @@
 setwd("/home/rokkuran/workspace/maps/")
-# path_libs <- "/home/rokkuran/workspace/maps/"
-packages <- c('maps', 'mapdata', 'ggplot2', 'ggmap')
 
-# new_packages <- packages[!(packages %in% installed.packages(lib=path_libs)[,"Package"])]
+packages <- c('maps', 'mapdata', 'ggplot2', 'ggmap')
 new_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
 if (length(new_packages)) {
-  install.packages(new_packages, lib=path_libs, dependencies=TRUE)
+  install.packages(new_packages, dependencies=TRUE)
 }
 
-# library(maps, lib=path_libs)
-# library(mapdata, lib=path_libs)
-# library(ggplot2, lib=path_libs)
-# library(ggmap, lib=path_libs)
 
 library(maps)
 library(mapdata)
@@ -40,25 +34,24 @@ add_countries <- function(p, df, countries, colour) {
 world <- map_data('world')
 
 visited <- read.csv('visited.csv')  # list of countries visited
-lachlan <- as.vector(visited[visited$person=='Lachlan', ]$country)
-bronwyn <- as.vector(visited[visited$person=='Bronwyn', ]$country)
+person_a <- as.vector(visited[visited$person=='PersonA', ]$country)
+person_b <- as.vector(visited[visited$person=='PersonB', ]$country)
 planned <- as.vector(visited[visited$person=='Planned', ]$country)
 
 
 mp <- ggplot() + borders("world", colour="black", fill="white", size=0.5)
 
 # shade red/blue and jointly visited countries are purple (alpha is 0.5)
-mp <- add_countries(mp, world, lachlan, 'red')
-mp <- add_countries(mp, world, bronwyn, 'blue')
+mp <- add_countries(mp, world, person_a, 'red')
+mp <- add_countries(mp, world, person_b, 'blue')
 
 ggsave('output/plot.png', plot=mp, width=20, height=12)
 
-mp <- add_countries(mp, world, planned, 'green')
-ggsave('output/plot_with_planned.png', plot=mp, width=20, height=12)
+# mp <- add_countries(mp, world, planned, 'green')
+# ggsave('output/plot_with_planned.png', plot=mp, width=20, height=12)
 
 
 df <- read.csv('flights.csv')
-print(df)
 
 # TODO: save values, this is stupid.
 starts <- geocode(as.vector(df$start))
