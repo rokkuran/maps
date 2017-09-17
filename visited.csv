@@ -29,6 +29,7 @@ PersonA,Vietnam
 PersonA,Cambodia
 PersonA,Thailand
 PersonA,Netherlands
+PersonA,Serbia
 PersonB,Netherlands
 PersonB,Australia
 PersonB,New Zealand
@@ -65,12 +66,12 @@ PersonB,Fiji
 PersonB,Nepal
 PersonB,Ireland
 PersonB,Indonesia
+PersonB,Serbia
+PersonB,Morocco
 Planned,Ukraine
 Planned,Russia
-Planned,Serbia
 Planned,Croatia
 Planned,Kosovo
 Planned,Macedonia
 Planned,Montenegro
 Planned,Bosnia and Herzegovina
-Planned,Morocco
