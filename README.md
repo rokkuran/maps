@@ -1,5 +1,5 @@
 # Maps
-Plot world map of countries visited. Cities and flights can also be incorporated.
+Simple script to plot world map of countries visited for two people. Cities and flights can also be incorporated.
 
 Colours represent countries visited by two different people, red and blue. Each colour has alpha of 0.5, hence jointly visited countries are purple.
 
