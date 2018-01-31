@@ -30,6 +30,10 @@ PersonA,Cambodia
 PersonA,Thailand
 PersonA,Netherlands
 PersonA,Serbia
+PersonA,Turkey
+PersonA,Lithuania
+PersonB,Lithuania
+PersonB,Turkey
 PersonB,Netherlands
 PersonB,Australia
 PersonB,New Zealand
@@ -68,10 +72,17 @@ PersonB,Ireland
 PersonB,Indonesia
 PersonB,Serbia
 PersonB,Morocco
-Planned,Ukraine
-Planned,Russia
-Planned,Croatia
-Planned,Kosovo
-Planned,Macedonia
-Planned,Montenegro
+PersonA,Ukraine
+PersonA,Belarus
+PersonA,Russia
+PersonA,Finland
+PersonB,Ukraine
+PersonB,Belarus
+PersonB,Russia
+Planned,Estonia
 Planned,Bosnia and Herzegovina
+Planned,Croatia
+Planned,Montenegro
+Planned,Georgia
+Planned,Kazakhstan
+Planned,Malaysia
