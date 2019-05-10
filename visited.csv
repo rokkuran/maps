@@ -32,6 +32,20 @@ PersonA,Netherlands
 PersonA,Serbia
 PersonA,Turkey
 PersonA,Lithuania
+PersonA,Estonia
+PersonA,Bosnia and Herzegovina
+PersonA,Croatia
+PersonA,Montenegro
+PersonA,Georgia
+PersonA,Kazakhstan
+PersonA,Malaysia
+PersonB,Estonia
+PersonB,Bosnia and Herzegovina
+PersonB,Croatia
+PersonB,Montenegro
+PersonB,Georgia
+PersonB,Kazakhstan
+PersonB,Malaysia
 PersonB,Lithuania
 PersonB,Turkey
 PersonB,Netherlands
@@ -79,10 +93,3 @@ PersonA,Finland
 PersonB,Ukraine
 PersonB,Belarus
 PersonB,Russia
-Planned,Estonia
-Planned,Bosnia and Herzegovina
-Planned,Croatia
-Planned,Montenegro
-Planned,Georgia
-Planned,Kazakhstan
-Planned,Malaysia
