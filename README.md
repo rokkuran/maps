@@ -15,4 +15,5 @@ Cities are green dots and flights are magenta curves.
 
 
 ## Future work
-- Store google api city locations to local file.
+- ~~Update to use google api key after developer key now required.~~
+- ~~Store google api city locations to local file.~~
